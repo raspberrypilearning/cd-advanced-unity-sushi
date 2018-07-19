@@ -1,25 +1,19 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+Make a two player game using Unity. You will learn how to create an **animation**, what **Object Oriented Programming** is, and more! 
+
+This tutorial builds off the knowledge learned in the previous two Sushi Cards, so if you haven't done those, try them out now!
 
 ### What you will make
 
-Add something here to showcase here, for example:
+In this project you will create a 2D platformer game. If you have done the **Scratch Sushi Cards**, it might remind you of that. At the end you can try to code your own powerups!
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+    ![](images/game.png)
 
 ### What you will learn
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level){:target="_blank"}
 
 ### Additional information for educators
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
 
 Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
