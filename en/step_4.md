@@ -55,7 +55,7 @@ public Animator       animator;
 
 public char           direction;
 public bool           jumping;
-public float          jumppower, movespeed, powerupTime;
+public float          jumppower, movespeed, powerupTimeLeft;
 ```
    
 + Finally, add this **constructor** to the **class**:
@@ -71,7 +71,7 @@ public Player(string playerName)
     jumping = false;
     jumppower = 500.0f;
     movespeed = 2f;
-    powerupTime = 0.0f;
+    powerupTimeLeft = 0.0f;
 
     if (playerName == "cat")
         direction = 'L';

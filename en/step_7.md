@@ -2,7 +2,7 @@
 
 You can have players get a bonus when they pick up a blue coin! Lets speed them up for 5 seconds.
 
-To create a powerup you should make a method (a function in a class) in your **PlayerController** class. A powerup controls your player so it makes sense to put it in the **PlayerController** class.
+To create a powerup you should make a method (a function in a class). A powerup controls your player so it makes sense to put the method in the **PlayerController** class.
 
 + So add this function to the **PlayerController** class: 
 ```csharp
@@ -27,33 +27,33 @@ The first line decreases the timer.
 
 --- /collapse ---
 
-+ Now you need to set the player's `powerupTimeLeft` to 5 seconds when you collide with it. So, you'll need to change the "Collisions" script.
++ Now you need to set the player's `powerupTimeLeft` to five seconds when you collide with it. So, you'll need to change the "Collisions" script.
 
 The powerup coins are tagged as "powerup". So, you can use that to determine if a player collided with a powerup.
 
-+ Add this code to the `OnCollisionEnter2D()` function:
++ Add this code to the `OnCollisionEnter2D()` function in the "Collisions" script:
 
-    ```csharp
-    if (col.gameObject.tag == "powerup")
+```csharp
+if (col.gameObject.tag == "powerup")
+{
+    Destroy(col.gameObject);
+    if (animal == "cat")
     {
-        Destroy(col.gameObject);
-        if (animal == "cat")
-        {
-            GameObject.Find("Platform").GetComponent<PlayerController>().cat.powerupTimeLeft = powerupTime;
-        }
-        if (animal == "dog")
-        {
-            GameObject.Find("Platform").GetComponent<PlayerController>().dog.powerupTimeLeft = powerupTime;
-        }
+        GameObject.Find("Platform").GetComponent<PlayerController>().cat.powerupTimeLeft = powerupTime;
     }
-    ```
+    if (animal == "dog")
+    {
+        GameObject.Find("Platform").GetComponent<PlayerController>().dog.powerupTimeLeft = powerupTime;
+    }
+}
+```
 
 --- collapse ---
 ---
 title: What does the code do?
 ---
 
-The `if` statements check which animal collided with the powerup then set that animal's `powerupTimeLeft` to 5 seconds.
+The `if` statements check which animal collided with the powerup then set that animal's `powerupTimeLeft` to five seconds.
 
 --- /collapse ---
 

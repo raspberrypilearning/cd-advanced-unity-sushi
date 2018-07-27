@@ -8,7 +8,7 @@ This tutorial builds off the knowledge learned in the previous two Sushi Cards, 
 
 In this project you will create a 2D platformer game. If you have done the **Scratch Sushi Cards**, it might remind you of that. At the end you can try to code your own powerups!
 
-    ![](images/game.png)
+![Preview of the platform game](images/game.png)
 
 ### What you will learn
 

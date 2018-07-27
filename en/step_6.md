@@ -15,11 +15,14 @@ In C# programming an **index** starts at `0`. So, the first item in an array wil
 
 --- /collapse ---
 
-You will create an **array** of **GameObjects**. There are three hearts for each player, so you can use an **array** because they are all the same type (type GameObject).
+You will create an **array** of **GameObjects**. There are three hearts for each player, so you can use an **array** because they are all the same type (type **GameObject**).
 
-Declaring an array is easy, all you need to do is add brackets to the end of a data type (example: `int[] numbers;`).
+Declaring an array is easy, all you need to do is add square brackets to the end of a data type (example: `int[] numbers;`).
 
-+ To create an array of hearts put this line of code: `private GameObject[] hearts` under `// Array declaration` in the "collisions" script.
++ Look at the top of the "Collisions" script, where all the variables are declared. You should see the `hearts` array declared. You can tell it is an array because of the `[]`:
+```csharp
+private GameObject[] hearts;
+``` 
 
 Now you need to **initialise** the array. 
 
@@ -34,7 +37,7 @@ title: What does initialise mean?
 
 To do this you need to use the `new` keyword again. You need to know the size of an array when it is created, and you know it should be three because their are three hearts!
 
-+ So, add this line, which will initialize your array with 3 elements: `hearts = new GameObject[3];`.
++ So, add this line to `Start()` under `// Array declaration`, which will initialize your array with 3 elements: `hearts = new GameObject[3];`.
 
 Note: Whatever number you put where the three is will change the size of an array. so `hearts = new GameObject[10];` will create an array with ten elements.
 
@@ -53,7 +56,7 @@ Now if you want to make the player lose a heart, all you need to do is delete th
 + Add this line of code into the `OnCollisionEnter2D(Collision col)` function: 
 
 ```csharp
-Destroy(hearts[lives]);`.
+Destroy(hearts[lives]);
 ```
 
 Now you can run the game and the lives will disappear!

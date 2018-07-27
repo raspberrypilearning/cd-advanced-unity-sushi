@@ -6,9 +6,9 @@ Time to use the class you just created!
 
 Creating an **object** is done by using the constructor you created earlier. This is called **instantiating** an object. In C# this is done with the **new** keyword. We will make a cat and a dog (the dog being the orange one and the cat the grey one).
 
-+ Add the line `cat = new Player("cat")` in the `Start()` function. It will create a new player object that's variable name is cat (do the same but replace cat with dog). 
++ In the "PlayerController" script class, add the declarations `public Player dog;` and `public Player cat;` to the top of the `PlayerController` class, above `void Start()`.
 
-+ Add declarations (you can use `public Player dog;` and `public Player cat;`) for two Players above `voidStart()`.
++ Add the line `cat = new Player("cat");` in the `Start()` function. It will create a new player object that's variable name is cat. Then do the same again, but replacing `cat` with `dog`. 
 
 --- collapse ---
 ---
@@ -39,7 +39,7 @@ startingcode.mover(dog, KeyCode.A, KeyCode.D, KeyCode.W);
 startingcode.mover(cat, KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.UpArrow);
 ```
 
-    ![](images/directions.png)
+![](images/directions.png)
     
 --- collapse ---
 ---
