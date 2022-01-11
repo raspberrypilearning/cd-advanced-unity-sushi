@@ -1,19 +1,22 @@
+---
 title: cd-advanced-unity-sushi
 hero_image: images/banner.png
 description: cd-advanced-unity-sushi description
 version: 4
 listed: false
 copyedit: false
-last_tested: "2018-07-19"
+last_tested: '2018-07-19'
 steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Animations
-  - title: Setting up your player objects
-  - title: Moving Two Players
-  - title: Losing lives
-  - title: Powerup!
-  - title: Making Menus
-  - title: Add to Your Platformer
-  - title: Build your game for the web!
-  - title: Extra Additions!
+- title: Introduction
+- title: What you will need
+  completion: engaged
+- title: Animations
+- title: Setting up your player objects
+- title: Moving Two Players
+- title: Losing lives
+- title: Powerup!
+- title: Making Menus
+- title: Add to Your Platformer
+- title: Build your game for the web!
+  completion: internal
+- title: Extra Additions!
